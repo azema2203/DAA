@@ -13,16 +13,16 @@ How my algorithm works:
 I used recursion to solve this problem.
 First, I check if the current node is null. If it is null, I return null because the value was not found.
 Then I compare the current node's value with the target value.
-- If both values are equal, I return the current node.
-- If the target value is smaller, I search in the left subtree.
-- If the target value is greater, I search in the right subtree.
+If both values are equal, I return the current node.
+If the target value is smaller, I search in the left subtree.
+If the target value is greater, I search in the right subtree.
 I repeat these steps until I find the value or reach null.
 
 Time complexity:
 The time complexity is O(h), where h is the height of the tree.
-- Best case: O(1), when the value is at the root.
-- Average case: O(log n), when the tree is balanced.
-- Worst case: O(n), when the tree is unbalanced.
+Best case: O(1), when the value is at the root.
+Average case: O(log n), when the tree is balanced.
+Worst case: O(n), when the tree is unbalanced.
 The reason is that at every step I search only in one direction, either left or right. I don't need to check all the nodes.
 
 Space complexity:
