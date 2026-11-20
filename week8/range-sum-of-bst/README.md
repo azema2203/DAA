@@ -14,8 +14,8 @@ I used recursion to solve this problem.
 First, I check if the current node is null. If it is null, I return 0 because there is nothing to add.
 Then I check if the current node's value is inside the range. If it is between low and high, I add it to the sum.
 After that, I check which side of the tree I need to search:
-- If the current value is greater than low, I search in the left subtree.
-- If the current value is smaller than high, I search in the right subtree.
+If the current value is greater than low, I search in the left subtree.
+If the current value is smaller than high, I search in the right subtree.
 I use these conditions because the tree is a Binary Search Tree, so I can skip some nodes that cannot be inside the range.
 Finally, I return the total sum.
 
